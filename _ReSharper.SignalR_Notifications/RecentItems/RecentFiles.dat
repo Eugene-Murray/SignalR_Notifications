@@ -1,0 +1,58 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/f:jquery-ui-1.8.11.min.js" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/f:jquery-1.7.2.min.js" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/f:jquery-ui-1.8.11.js" caret="67005" fromTop="7" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/f:jquery-1.7.2-vsdoc.js" caret="173871" fromTop="13" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/f:jquery-1.7.2.js" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Content/f:Site.css" caret="14412" fromTop="263" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:Index.cshtml" caret="4683" fromTop="8" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:HomeIndexViewModel.js" caret="956" fromTop="35" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/f:native.history.js" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="1089" fromTop="19" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="821" fromTop="22" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="1117" fromTop="32" />
+    <File id="B33AAA62-7077-4654-B1F8-0C5B5577E28C/f:SignalR.RouteExtensions.cs" caret="1051" fromTop="10" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/f:NotificationsHub.cs" caret="257" fromTop="11" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/f:Global.asax.cs" caret="1264" fromTop="26" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationsPersistentConnection.cs" caret="246" fromTop="11" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:GMASGroup.cs" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:GMASUser.cs" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationMessage.cs" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationMessageHub.cs" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRClient.cshtml" caret="1818" fromTop="41" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="1688" fromTop="18" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="1525" fromTop="13" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRClient.cshtml" caret="2397" fromTop="19" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="892" fromTop="10" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRClient.cshtml" caret="2184" fromTop="11" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="661" fromTop="7" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="808" fromTop="12" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="264" fromTop="6" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationsPersistentConnection.cs" caret="2333" fromTop="6" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationsPersistentConnection.cs" caret="4744" fromTop="22" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationsPersistentConnection.cs" caret="2716" fromTop="6" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationsPersistentConnection.cs" caret="3561" fromTop="21" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="375" fromTop="7" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="789" fromTop="25" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="478" fromTop="7" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="704" fromTop="18" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="612" fromTop="14" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="1122" fromTop="19" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="1692" fromTop="20" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="1474" fromTop="14" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Views/d:Home/f:SignalRServer.cshtml" caret="947" fromTop="15" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="1362" fromTop="12" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="1289" fromTop="27" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="246" fromTop="6" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="104" fromTop="2" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="104" fromTop="2" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRClientViewModel.js" caret="1052" fromTop="18" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Scripts/d:ViewModels/f:SignalRServerViewModel.js" caret="1117" fromTop="17" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/d:Models/d:Notifications2/f:NotificationsPersistentConnection.cs" caret="224" fromTop="9" />
+    <File id="3D1CFE4D-C7D9-4B7F-BACB-E2E5AFAEA49F/f:Global.asax.cs" caret="1380" fromTop="17" />
+  </RecentEdits>
+</RecentFiles>

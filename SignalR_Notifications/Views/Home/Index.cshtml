@@ -1,0 +1,37 @@
+@{
+    ViewBag.Title = "SignalR and Knockout.js Notifications";
+}
+
+
+
+
+<div id="divNotificationsContainer" class="divNotificationsContainer">
+	<div id="divNotificationsList" class="divNotificationsList">
+
+    <ul id="orderedListNotifications" class="ulNotifications" data-bind="template: { foreach: notificationList, afterAdd: animateBackgroundColour }">
+
+        <li class="liStyle"><div href="#" class="divRoundedBordersNewNotification" data-bind="event: { mouseover: $parent.onMouseOver, mouseout: $parent.onMouseOut }">  
+                 <span data-bind="text: title"> </span></div>
+        </li>
+         
+</ul>
+
+		</div>
+	<div id="divNotificationDetails" class="divNotificationDetails" data-bind="with: hoverItem">
+	
+        <span data-bind="text: title"> </span>
+        <br />
+        <p data-bind="text: description"></p>
+        Created At: <span data-bind="text: timeCreated"> </span>
+        </div>
+    </div>
+
+<script src="../../Scripts/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery-ui-1.8.11.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery.color.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery.signalR-0.5.0.js" type="text/javascript"></script>
+<script src="../../Scripts/knockout-2.0.0.js" type="text/javascript"></script>
+<script type="text/javascript" src="/signalr/hubs"></script>
+<script src="../../Scripts/Helpers/Console.js" type="text/javascript"></script>
+<script src="../../Scripts/ViewModels/HomeIndexViewModel.js" type="text/javascript"></script>
+<script src="../../Scripts/json2.js" type="text/javascript"></script>
