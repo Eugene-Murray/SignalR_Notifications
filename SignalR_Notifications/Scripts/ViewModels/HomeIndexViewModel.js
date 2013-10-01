@@ -1,5 +1,7 @@
 ﻿/// <reference path="../_references.js" />
 
+
+
 var homeIndexViewModel = {
     notificationList: ko.observableArray(),
     hoverItem: ko.observable(),
