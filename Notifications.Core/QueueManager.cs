@@ -13,7 +13,7 @@ namespace SignalR_Notifications.SignalRHubs
 
     public static class QueueManager
     {
-        private static QueueClient queueClient;
+        public static QueueClient queueClient;
         private static string QueueName = "SignalR_Queue";
         private const Int16 maxTrials = 4;
 
@@ -102,9 +102,20 @@ namespace SignalR_Notifications.SignalRHubs
 
         //}
 
+        public static BrokeredMessage ReceiveMessage()
+        {
+            Trace.WriteLine("\nReceive message from Queue - ReciveMessage()");
+            BrokeredMessage message = queueClient.Receive(TimeSpan.FromSeconds(5));
+
+            Trace.WriteLine(string.Format("Message received: Id = {0}, Body = {1}", message.MessageId, message.GetBody<string>()));
+
+            return message;
+        }
+
+
         public static Notifications.Core.Notification ReceiveMessages()
         {
-            Trace.WriteLine("\nReceiving message from Queue...");
+            Trace.WriteLine("\nReceive message from Queue...");
             var notificationMessage = new Notifications.Core.Notification();
             while (true)
             {
@@ -154,7 +165,7 @@ namespace SignalR_Notifications.SignalRHubs
             return message;
         }
 
-        private static void HandleTransientErrors(MessagingException e)
+        public static void HandleTransientErrors(MessagingException e)
         {
             //If transient error/exception, let's back-off for 2 seconds and retry
             Trace.WriteLine(e.Message);

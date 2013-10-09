@@ -15,5 +15,10 @@ namespace SignalR_Notifications.Controllers
             return View();
         }
 
+        public ActionResult SignalRServiceBus()
+        {
+            return View();
+        }
+
     }
 }

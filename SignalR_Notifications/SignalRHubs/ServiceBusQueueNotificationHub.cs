@@ -2,8 +2,10 @@
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
+using Microsoft.ServiceBus.Messaging;
 using SignalR;
 using SignalR.Hubs;
 using SignalR_Notifications.Models;
@@ -16,7 +18,9 @@ namespace SignalR_Notifications.SignalRHubs
         
         public ServiceBusQueueNotificationHub()
         {
-            LoadRecentNotifications();
+            LoadNotifications();
+
+            // TODO: call BroadcastNewNotification(Notification notification) ??
         }
 
         private void BroadcastNewNotification(Notification notification)
@@ -24,7 +28,7 @@ namespace SignalR_Notifications.SignalRHubs
             GetClients().addNotification(notification);
         }
 
-        public IEnumerable<Notification> RecentNotifications()
+        public IEnumerable<Notification> QueuedNotifications()
         {
             return _notifications.Values;
         }
@@ -32,14 +36,49 @@ namespace SignalR_Notifications.SignalRHubs
         private void LoadNotifications()
         {
             var notificationList = new List<Notification>();
-            
-            
-                
-            //}.ForEach(notification => _notifications.TryAdd(notification.Id, notification));
-            var brokerdMessage = QueueManager.ReceiveMessages();
-            //var message = new Notification { Id = Convert.ToInt32(brokerdMessage.MessageId), Title = "Man United and Man City target Mats Hummels...", Description = "Inter Milan are considering a summer move for Manchester City's 26-year-old defender Aleksandar Kolarov.", Importance = Importance.High, TimeCreated = DateTime.Now.AddHours(-9).ToShortTimeString() };
 
-            notificationList.ForEach();
+            while (true)
+            {
+                try
+                {
+                    var brokerdMessage = QueueManager.ReceiveMessage();
+                    if (brokerdMessage == null)
+                    {
+                        //no more messages in the queue
+                        break;
+                    }
+                    else
+                    {
+                        var message = new Notification
+                            {
+                                Id = Convert.ToInt32(brokerdMessage.MessageId),
+                                Title = "Man United and Man City target Mats Hummels...",
+                                Description =
+                                    "Inter Milan are considering a summer move for Manchester City's 26-year-old defender Aleksandar Kolarov.",
+                                Importance = Importance.High,
+                                TimeCreated = DateTime.Now.AddHours(-9).ToShortTimeString()
+                            };
+                        notificationList.Add(message);
+                        notificationList.ForEach(notification => _notifications.TryAdd(notification.Id, notification));
+
+                        brokerdMessage.Complete();
+                    }
+                }
+                catch (MessagingException e)
+                {
+                    if (!e.IsTransient)
+                    {
+                        Trace.WriteLine(e.Message);
+                        throw;
+                    }
+                    else
+                    {
+                        QueueManager.HandleTransientErrors(e);
+                    }
+                }
+
+            }
+            QueueManager.queueClient.Close();
         }
 
         private static dynamic GetClients()

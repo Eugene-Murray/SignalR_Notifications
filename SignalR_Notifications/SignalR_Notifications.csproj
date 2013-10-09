@@ -237,6 +237,7 @@
     <Content Include="Scripts\upshot.knockout.extensions.js" />
     <Content Include="Scripts\upshot.min.js" />
     <Content Include="Scripts\ViewModels\HomeIndexViewModel.js" />
+    <Content Include="Scripts\ViewModels\SignalRServiceBusVM.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -283,6 +284,9 @@
       <Project>{1e2ae769-6a4c-4cfd-9b13-61436501fbe2}</Project>
       <Name>Notifications.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\SignalRServiceBus.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
