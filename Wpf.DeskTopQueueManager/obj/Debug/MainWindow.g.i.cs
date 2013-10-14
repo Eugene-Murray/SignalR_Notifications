@@ -79,6 +79,12 @@ namespace Wpf.DeskTopQueueManager {
             {
             case 1:
             this.SendToQueue = ((System.Windows.Controls.Button)(target));
+            
+            #line 9 "..\..\MainWindow.xaml"
+            this.SendToQueue.Click += new System.Windows.RoutedEventHandler(this.SendToQueue_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;
