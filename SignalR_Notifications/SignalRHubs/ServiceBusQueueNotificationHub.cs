@@ -20,7 +20,52 @@ namespace SignalR_Notifications.SignalRHubs
         {
             LoadNotifications();
 
-            // TODO: call BroadcastNewNotification(Notification notification) ??
+            AddNewNotifications();
+        }
+
+        public void AddNewNotifications()
+        {
+            while (true)
+            {
+                try
+                {
+                    var brokerdMessage = QueueManager.ReceiveMessage();
+                    if (brokerdMessage == null)
+                    {
+                        //no more messages in the queue
+                        break;
+                    }
+                    else
+                    {
+                        var message = new Notification
+                        {
+                            Id = Convert.ToInt32(brokerdMessage.MessageId),
+                            Title = brokerdMessage.GetBody<string>().Take(10).ToString(),
+                            Description =
+                                brokerdMessage.GetBody<string>(),
+                            Importance = Importance.High,
+                            TimeCreated = DateTime.Now.ToString()
+                        };
+                        BroadcastNewNotification(message);
+
+                        brokerdMessage.Complete();
+                    }
+                }
+                catch (MessagingException e)
+                {
+                    if (!e.IsTransient)
+                    {
+                        Trace.WriteLine(e.Message);
+                        throw;
+                    }
+                    else
+                    {
+                        QueueManager.HandleTransientErrors(e);
+                    }
+                }
+
+            }
+            QueueManager.queueClient.Close();
         }
 
         private void BroadcastNewNotification(Notification notification)
@@ -52,11 +97,11 @@ namespace SignalR_Notifications.SignalRHubs
                         var message = new Notification
                             {
                                 Id = Convert.ToInt32(brokerdMessage.MessageId),
-                                Title = "Man United and Man City target Mats Hummels...",
+                                Title = brokerdMessage.GetBody<string>().Take(10).ToString(),
                                 Description =
-                                    "Inter Milan are considering a summer move for Manchester City's 26-year-old defender Aleksandar Kolarov.",
+                                    brokerdMessage.GetBody<string>(),
                                 Importance = Importance.High,
-                                TimeCreated = DateTime.Now.AddHours(-9).ToShortTimeString()
+                                TimeCreated = DateTime.Now.ToString()
                             };
                         notificationList.Add(message);
                         notificationList.ForEach(notification => _notifications.TryAdd(notification.Id, notification));

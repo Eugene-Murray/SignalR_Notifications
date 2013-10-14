@@ -3,6 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="256" Width="499">
+            <TextBlock HorizontalAlignment="Left" Margin="9.667,9.667,-11.333,-0.667" TextWrapping="Wrap" VerticalAlignment="Top" Height="245" Width="499"/>
+        </Border>
+        <Button x:Name="SendToQueue" Content="Send Message to Azure Queue" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Width="236"/>
+
     </Grid>
 </Window>

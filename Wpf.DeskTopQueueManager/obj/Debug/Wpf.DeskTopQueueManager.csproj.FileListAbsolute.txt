@@ -1,7 +1,6 @@
 E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\bin\Debug\Wpf.DeskTopQueueManager.exe.config
 E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\bin\Debug\Wpf.DeskTopQueueManager.exe
 E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\bin\Debug\Wpf.DeskTopQueueManager.pdb
-E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\obj\Debug\Wpf.DeskTopQueueManager.csprojResolveAssemblyReference.cache
 E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\obj\Debug\MainWindow.baml
 E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\obj\Debug\MainWindow.g.cs
 E:\Code\MyStuff\SignalR_Notifications\Wpf.DeskTopQueueManager\obj\Debug\App.g.cs

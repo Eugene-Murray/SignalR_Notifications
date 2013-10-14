@@ -6,8 +6,6 @@ var homeIndexViewModel = {
     notificationList: ko.observableArray(),
     hoverItem: ko.observable(),
 
-
-
     animateBackgroundColour: function (elem) {
         console.log(elem);
         if (elem.nodeType === 1) {

@@ -200,3 +200,5 @@ E:\Code\MyStuff\SignalR_Notifications\SignalR_Notifications\obj\Debug\SignalR_No
 E:\Code\MyStuff\SignalR_Notifications\SignalR_Notifications\bin\Microsoft.ServiceBus.dll
 E:\Code\MyStuff\SignalR_Notifications\SignalR_Notifications\bin\Microsoft.WindowsAzure.Configuration.dll
 E:\Code\MyStuff\SignalR_Notifications\SignalR_Notifications\bin\Microsoft.ServiceBus.xml
+E:\Code\MyStuff\SignalR_Notifications\SignalR_Notifications\bin\Notifications.Core.dll
+E:\Code\MyStuff\SignalR_Notifications\SignalR_Notifications\bin\Notifications.Core.pdb

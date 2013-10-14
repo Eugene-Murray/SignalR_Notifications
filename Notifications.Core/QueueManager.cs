@@ -113,50 +113,50 @@ namespace SignalR_Notifications.SignalRHubs
         }
 
 
-        public static Notifications.Core.Notification ReceiveMessages()
-        {
-            Trace.WriteLine("\nReceive message from Queue...");
-            var notificationMessage = new Notifications.Core.Notification();
-            while (true)
-            {
-                try
-                {
-                    //receive messages from Queue
-                    BrokeredMessage message = queueClient.Receive(TimeSpan.FromSeconds(5));
-                    if (message != null)
-                    {
-                        Trace.WriteLine(string.Format("Message received: Id = {0}, Body = {1}", message.MessageId, message.GetBody<string>()));
-                        // Further custom message processing could go here...
+        //public static Notifications.Core.Notification ReceiveMessages()
+        //{
+        //    Trace.WriteLine("\nReceive message from Queue...");
+        //    var notificationMessage = new Notifications.Core.Notification();
+        //    while (true)
+        //    {
+        //        try
+        //        {
+        //            //receive messages from Queue
+        //            BrokeredMessage message = queueClient.Receive(TimeSpan.FromSeconds(5));
+        //            if (message != null)
+        //            {
+        //                Trace.WriteLine(string.Format("Message received: Id = {0}, Body = {1}", message.MessageId, message.GetBody<string>()));
+        //                // Further custom message processing could go here...
 
-                        notificationMessage.Id = message.MessageId;
-                        notificationMessage.Importance = Importance.Medium;
-                        notificationMessage.Description = message.GetBody<string>();
-                        return notificationMessage;
+        //                notificationMessage.Id = message.MessageId;
+        //                notificationMessage.Importance = Importance.Medium;
+        //                notificationMessage.Description = message.GetBody<string>();
+        //                return notificationMessage;
 
-                        message.Complete();
-                    }
-                    else
-                    {
-                        //no more messages in the queue
-                        break;
-                    }
-                }
-                catch (MessagingException e)
-                {
-                    if (!e.IsTransient)
-                    {
-                        Trace.WriteLine(e.Message);
-                        throw;
-                    }
-                    else
-                    {
-                        HandleTransientErrors(e);
-                    }
-                }
-            }
+        //                message.Complete();
+        //            }
+        //            else
+        //            {
+        //                //no more messages in the queue
+        //                break;
+        //            }
+        //        }
+        //        catch (MessagingException e)
+        //        {
+        //            if (!e.IsTransient)
+        //            {
+        //                Trace.WriteLine(e.Message);
+        //                throw;
+        //            }
+        //            else
+        //            {
+        //                HandleTransientErrors(e);
+        //            }
+        //        }
+        //    }
 
-            queueClient.Close();
-        }
+        //    queueClient.Close();
+        //}
 
         private static BrokeredMessage CreateSampleMessage(string messageId, string messageBody)
         {

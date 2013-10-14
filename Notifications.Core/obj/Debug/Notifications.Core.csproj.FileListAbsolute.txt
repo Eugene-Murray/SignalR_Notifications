@@ -4,6 +4,5 @@ E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\bin\Debug\Notifications
 E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\bin\Debug\Microsoft.ServiceBus.dll
 E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
 E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\bin\Debug\Microsoft.ServiceBus.xml
-E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\obj\Debug\Notifications.Core.csprojResolveAssemblyReference.cache
 E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\obj\Debug\Notifications.Core.dll
 E:\Code\MyStuff\SignalR_Notifications\Notifications.Core\obj\Debug\Notifications.Core.pdb
